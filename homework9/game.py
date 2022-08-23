@@ -53,7 +53,7 @@ def UserMessage(update: Update, context: CallbackContext):
     log(rand_ball, user_ball)
     return rand_ball, user_ball
 
-updater = Updater("5521188367:AAHy85dyM-J4-6t9Cr5o2ZzxgMF-cREgYuQ")
+updater = Updater("KEY")
 updater.dispatcher.add_handler(CommandHandler("game", start_game))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, UserMessage))
 
